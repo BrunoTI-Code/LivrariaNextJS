@@ -1,6 +1,6 @@
 import { Editora } from '../modelo/Editora';
 
-// Array de objetos Editora que representa as editoras existentes
+//editoras existentes
 
 let editoras: Editora[] = [
   new Editora(1, 'Intrínseca'),
@@ -10,7 +10,7 @@ let editoras: Editora[] = [
 
 export class ControleEditora {
   
-  //obter o nome da editora com base no código da editora
+  //obter o nome da editora
   
   getNomeEditora(codEditora: number) {
     const editora = editoras.find(e => e.codEditora === codEditora);

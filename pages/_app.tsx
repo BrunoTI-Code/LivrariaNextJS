@@ -1,4 +1,3 @@
-// _app.tsx
 import 'bootstrap/dist/css/bootstrap.css';
 import { AppProps } from 'next/app';
 

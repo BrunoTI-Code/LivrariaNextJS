@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Estilize o texto no seu navbar para branco */
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: rgb(12, 12, 12);
+  color: rgb(216, 12, 12); /* Defina a cor do texto como branco */
+}
+
+
+
+
+
+
+h1 {
+  text-align: center; /* Centraliza o texto */
+  color: black; /* Define a cor do texto como preto */
+  font-size: 2em; /* Aumenta o tamanho da fonte */
+}
+
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+td {
+  padding: 35px; /* Adiciona um espaço de 10px ao redor do conteúdo de cada célula da tabela */
+}
+th {
+  padding: 45px; /* Adiciona um espaço de 10px ao redor do conteúdo de cada célula do cabeçalho da tabela */
+}

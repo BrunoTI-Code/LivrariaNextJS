@@ -1,4 +1,3 @@
-// pages/api/editoras/index.ts
 import { NextApiRequest, NextApiResponse } from 'next'
 import { ControleEditora } from '../../../classes/controle/ControleEditora'
 

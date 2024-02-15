@@ -1,4 +1,3 @@
-// pages/api/livros/index.ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import { ControleLivro } from '../../../classes/controle/ControleLivros';
 import { Livro } from '../../../classes/modelo/Livro';
